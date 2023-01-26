@@ -1,0 +1,19 @@
+<!-- <p *ngIf="!this.usersService.userSelected">Select an user</p>
+
+<div class="card" *ngIf="this.usersService.userSelected" style="width: 18rem;">
+    <img [src]="this.usersService.userSelected.avatar" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{this.usersService.userSelected.first_name}} {{this.usersService.userSelected.last_name}}</h5>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+   -->
+<p *ngIf="!user">Select an user</p>
+
+<div class="card" *ngIf="user" style="width: 12rem;">
+    <img [src]="user.avatar" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">{{user.first_name}} {{user.last_name}}</h5>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>

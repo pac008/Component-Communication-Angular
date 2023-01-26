@@ -1,3 +1,20 @@
+# Welcome devs !!
+
+Welcome to this project where we can see the communication between components in a reactive way
+Below I leave the libraries that we have used and the commands to launch the application.
+I hope it works for you!
+
+## Libreries
+
+https://ng-bootstrap.github.io/#/components/table/examples 
+https://getbootstrap.com/docs/5.3/components/card/
+https://rxjs.dev/guide/subject
+
+
+
+## API
+https://reqres.in/
+
 # ComunicationComponents
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.3.

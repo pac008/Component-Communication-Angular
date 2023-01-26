@@ -1,0 +1,25 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First name</th>
+      <th scope="col">Last name</th>
+      <th scope="col">Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr
+      *ngFor="let user of users; index as i"
+      (click)="setUserSelected(user, i)"
+      [ngClass]="i === rowSelected ? 'rowSelected' : ''"
+    >
+      <th scope="row">{{ i + 1 }}</th>
+      <td>
+        <img [src]="user.avatar" class="me-2" style="width: 20px" />
+        {{ user.first_name }}
+      </td>
+      <td>{{ user.last_name }}</td>
+      <td>{{ user.email }}</td>
+    </tr>
+  </tbody>
+</table>
