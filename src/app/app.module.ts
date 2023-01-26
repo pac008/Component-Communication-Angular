@@ -3,22 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { DetailsComponent } from './pages/users/details/details.component';
-import { ListComponent } from './pages/users/list/list.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { NavbarComponent } from './shared/navbar/navbar.component';
+import { UsersModule } from './pages/users/users.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DetailsComponent,
-    ListComponent,
-    NavbarComponent
+   
   ],
   imports: [
     BrowserModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    UsersModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
