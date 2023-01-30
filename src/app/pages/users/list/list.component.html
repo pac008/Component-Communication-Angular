@@ -10,7 +10,7 @@
   <tbody>
     <tr
       *ngFor="let user of users; index as i"
-      (click)="setUserSelected(user, i)"
+      (click)="setUserSelected(user)"
       >
       <th scope="row">{{ i + 1 }}</th>
       <td>
