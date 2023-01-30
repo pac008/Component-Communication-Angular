@@ -9,8 +9,6 @@ import { UsersService } from '../users.service';
 })
 export class ListComponent implements OnInit {
   public users!: User[];
-  public rowSelected!: number;
-  
   constructor(private usersService:UsersService) {}
 
   ngOnInit(): void {
@@ -18,9 +16,7 @@ export class ListComponent implements OnInit {
     .subscribe( users => this.users = users);
   }
 
-  setUserSelected(user: User, index: number): void {
-    // this.usersService.userSelected = user
-    this.rowSelected = index;
-    this.usersService.userSelected$.next(user)
+  setUserSelected(user: User): void {
+    this.usersService.userSelected$.next(user);
   }
 }
